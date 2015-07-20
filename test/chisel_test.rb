@@ -22,6 +22,13 @@ class ChiselTest < Minitest::Test
     assert_equal expected, input_for_test.split_it_up
   end
 
+  def test_logic_the_things_modifies_split_it_up
+    input_1 = ARGV[0]
+    input_for_test = Chisel.new(input_1)
+    expected = input_for_test.split_it_up
+    refute_equal expected, input_for_test.logic_the_things
+  end
+
   def test_it_can_join_the_logic
     input_1 = ARGV[0]
     input_for_test = Chisel.new(input_1)
