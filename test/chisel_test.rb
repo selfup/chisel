@@ -38,8 +38,9 @@ class ChiselTest < Minitest::Test
 
   def test_it_can_stylize_the_logic
     input_1 = ARGV[0]
+    output_1 = ARGV[1]
     input_for_test = Chisel.new(input_1)
-    output_for_test = File.read('my_output.html')
+    output_for_test = File.read(output_1)
     expected = output_for_test
     assert_equal expected, input_for_test.stylize_amp
   end
