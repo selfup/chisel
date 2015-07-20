@@ -17,7 +17,7 @@ class Unordered
 	end
 
 	def make_input_mod
-		things = "#{input}#{@n}"
+		things = "#{input}\n"
 	end
 
 	def split_it_up
