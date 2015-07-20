@@ -1,4 +1,3 @@
-require "pry"
 class Unordered
 
 	attr_accessor :things, :array

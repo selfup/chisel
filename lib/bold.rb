@@ -1,4 +1,3 @@
-require "pry"
 class Bold
 
 	attr_accessor :things, :i
@@ -26,5 +25,5 @@ class Bold
 		@i = i
 		input = local_thing
 	end
-	
+
 end

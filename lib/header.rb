@@ -1,4 +1,3 @@
-require "pry"
 class Header
 
 	attr_accessor :input_header
@@ -59,5 +58,5 @@ class Header
 			remove.gsub("#", "")
 		end
 	end
-	
+
 end

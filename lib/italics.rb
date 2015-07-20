@@ -1,4 +1,3 @@
-require "pry"
 class Italics
 
 	attr_accessor :things, :i

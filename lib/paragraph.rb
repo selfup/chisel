@@ -1,4 +1,3 @@
-require "pry"
 class Paragraph
 
 	attr_accessor :input_paragraph
@@ -21,5 +20,5 @@ class Paragraph
 	def html_the_array
 		"#{@p1}\n  #{split_it_up.join("\n  ")}\n#{@p2}"
 	end
-	
+
 end

@@ -1,4 +1,3 @@
-require "pry"
 class Ordered
 
 	attr_accessor :things, :array
