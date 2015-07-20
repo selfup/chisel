@@ -1,6 +1,6 @@
 class Output
 
-  def input_thing
+  def input_line_read
     input_line_array = []
     File.foreach(ARGV[0]).map.with_index do |line, line_num|
        input_line_array << line_num
@@ -8,7 +8,7 @@ class Output
     input_line_array
   end
 
-  def out_put_thing
+  def output_line_read
     output_line_array = []
     File.foreach(ARGV[1]).map.with_index do |line, line_num|
        output_line_array << line_num
@@ -17,7 +17,7 @@ class Output
   end
 
   def terminal_output
-    "Converted #{ARGV[0]} (#{input_thing.last} lines) to #{ARGV[1]} (#{out_put_thing.last} lines)"
+    "Converted #{ARGV[0]} (#{input_line_read.last} lines) to #{ARGV[1]} (#{output_line_read.last} lines)"
   end
 
 end

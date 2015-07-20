@@ -18,7 +18,7 @@ class Unordered
 		make_input_mod.split("* ")
 	end
 
-	def do_it_right
+	def add_list_tags
 		split_it_up.map do |find|
 			if find.include?("\n")
 				find.sub!("\n", "</li>")
@@ -30,7 +30,7 @@ class Unordered
 	end
 
 	def html_the_array
-	  "<ol>#{do_it_right.join("\n")}\n</ol>"
+	  "<ol>#{add_list_tags.join("\n")}\n</ol>"
 	end
 
 end

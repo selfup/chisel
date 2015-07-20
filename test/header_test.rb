@@ -17,13 +17,13 @@ class HeaderTest < Minitest::Test
   def test_it_can_header_the_input
     input_for_test = Header.new("# This **is** a test")
     expected = ["<h1># This **is** a test</h1>"]
-    assert_equal expected, input_for_test.html_the_array
+    assert_equal expected, input_for_test.add_header_tags
   end
 
   def test_it_can_header_the_more_hashtaged_input
     input_for_test = Header.new("## This **is** a test")
     expected = ["<h2>## This **is** a test</h2>"]
-    assert_equal expected, input_for_test.html_the_array
+    assert_equal expected, input_for_test.add_header_tags
   end
 
   def test_it_can_remove_markdown_from_the_input

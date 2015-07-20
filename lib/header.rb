@@ -14,7 +14,7 @@ class Header
 	  input.split("\n")
 	end
 
-  def html_the_array
+  def add_header_tags
 		split_it_up.map do |add_tags|
 			if add_tags.include?("######")
 				"<h6>#{split_it_up.join(" ")}</h6>"
@@ -33,7 +33,7 @@ class Header
   end
 
 	def un_md_the_array
-		html_the_array.map do |remove|
+		add_header_tags.map do |remove|
 			remove.gsub("# ", "")
 		end
 	end
