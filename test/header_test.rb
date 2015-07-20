@@ -9,9 +9,9 @@ class HeaderTest < Minitest::Test
   end
 
   def test_it_can_log_the_header_input
-      input_for_test = Header.new("# This **is** a test")
-      expected = "# This **is** a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Header.new("# This **is** a test")
+    expected = "# This **is** a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_header_the_input

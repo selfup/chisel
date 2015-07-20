@@ -9,9 +9,9 @@ class OrderedTest < Minitest::Test
   end
 
   def test_it_can_log_the_ordered_input
-      input_for_test = Ordered.new("This 1. this 1. is 1. a test")
-      expected = "This 1. this 1. is 1. a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Ordered.new("This 1. this 1. is 1. a test")
+    expected = "This 1. this 1. is 1. a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_make_the_correct_input_mod

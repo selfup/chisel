@@ -26,4 +26,5 @@ class Bold
 		@i = i
 		input = local_thing
 	end
+	
 end

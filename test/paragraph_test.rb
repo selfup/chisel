@@ -9,9 +9,9 @@ class ParagraphTest < Minitest::Test
   end
 
   def test_it_can_log_the_paragraph_input
-      input_for_test = Paragraph.new("This is a test")
-      expected = "This is a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Paragraph.new("This is a test")
+    expected = "This is a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_split_the_input

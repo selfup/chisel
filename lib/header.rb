@@ -59,4 +59,5 @@ class Header
 			remove.gsub("#", "")
 		end
 	end
+	
 end

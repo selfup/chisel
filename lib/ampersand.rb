@@ -24,4 +24,5 @@ class Amp
 		@i = i
 		input = local_thing
 	end
+	
 end

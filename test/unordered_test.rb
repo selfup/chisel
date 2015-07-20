@@ -9,9 +9,9 @@ class UnorderedTest < Minitest::Test
   end
 
   def test_it_can_log_the_unordered_input
-      input_for_test = Unordered.new("This * this * is * a test")
-      expected = "This * this * is * a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Unordered.new("This * this * is * a test")
+    expected = "This * this * is * a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_make_the_correct_input_mod

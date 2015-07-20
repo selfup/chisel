@@ -10,9 +10,9 @@ class ItalicsTest < Minitest::Test
   end
 
   def test_it_can_log_the_italic_input
-      input_for_test = Italics.new("This *is* a test")
-      expected = "This *is* a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Italics.new("This *is* a test")
+    expected = "This *is* a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_bold_the_input

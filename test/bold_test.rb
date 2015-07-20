@@ -9,9 +9,9 @@ class BoldTest < Minitest::Test
   end
 
   def test_it_can_log_the_bold_input
-      input_for_test = Bold.new("This **is** a test")
-      expected = "This **is** a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Bold.new("This **is** a test")
+    expected = "This **is** a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_bold_the_input

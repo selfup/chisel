@@ -9,10 +9,9 @@ class AmpersandTest < Minitest::Test
   end
 
   def test_it_can_log_the_ampersand_input
-
-      input_for_test = Amp.new("This & this is a test")
-      expected = "This & this is a test"
-      assert_equal expected, input_for_test.input
+    input_for_test = Amp.new("This & this is a test")
+    expected = "This & this is a test"
+    assert_equal expected, input_for_test.input
   end
 
   def test_it_can_ampersand_the_input
