@@ -2,6 +2,8 @@ class Italics
 
 	attr_accessor :things
 
+	STAR = "*"
+
 	def initialize(things)
 		@things = things
 	end
@@ -15,8 +17,8 @@ class Italics
 		local_thing = input
 		while i != local_thing
 			i = local_thing
-			local_thing = local_thing.sub("*", "<em>")
-	    local_thing = local_thing.sub("*", "</em>")
+			local_thing = local_thing.sub(STAR, "<em>")
+	    local_thing = local_thing.sub(STAR, "</em>")
 		end
 		input = local_thing
 	end
