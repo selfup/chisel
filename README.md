@@ -11,7 +11,7 @@ Then do the following:
 
 You will get a terminal prompt as so:
 
-    Converted my_input.md (25 lines) to my_output.html (39 lines)
+    Converted my_input.md (29 lines) to my_output.html (47 lines)
 
 ### Once you get the idea: 
 
