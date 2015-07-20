@@ -16,7 +16,7 @@ class AmpersandTest < Minitest::Test
 
   def test_it_can_ampersand_the_input
     input_for_test = Amp.new("This & this is a test")
-    expected = "This &amp; this is a test"
+    expected = "This $amp; this is a test"
     assert_equal expected, input_for_test.amp_the_string
   end
 
