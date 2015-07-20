@@ -1,15 +1,9 @@
 class Unordered
 
-	attr_accessor :things, :array
-	attr_writer   :em2, :em1
+	attr_accessor :things
 
 	def initialize(things)
 		@things = things
-		@ul1    = "<ul>"
-		@ul2    = "</ul> "
-    @li1    = "  <li>"
-    @li2    = "</li>"
-		@n      = "\n"
 	end
 
 	def input
@@ -27,16 +21,16 @@ class Unordered
 	def do_it_right
 		split_it_up.map do |find|
 			if find.include?("\n")
-				find.sub!("\n", "#{@li2}")
+				find.sub!("\n", "</li>")
 				find2 = find.split(" ")
-				find2.unshift("#{@li1}")
+				find2.unshift("  <li>")
 				find = find2.join(" ")
 			end
 		end
 	end
 
 	def html_the_array
-	  "#{@ul1}#{do_it_right.join("\n")}\n#{@ul2}"
+	  "<ol>#{do_it_right.join("\n")}\n</ol>"
 	end
 
 end
