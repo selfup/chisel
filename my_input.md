@@ -26,3 +26,5 @@ My *emphasized and **stronged** text* is awesome.
 Yay!
 
 Fo **chisel** *dizzle* yo
+
+Fo *chisel*
