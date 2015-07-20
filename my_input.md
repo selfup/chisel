@@ -24,3 +24,5 @@ My *emphasized and **stronged** text* is awesome.
 1. Japanese
 
 Yay!
+
+Fo **chisel** *dizzle* yo
